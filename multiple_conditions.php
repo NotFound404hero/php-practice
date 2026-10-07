@@ -1,5 +1,5 @@
 <?php // 複数条件の判定
-$age = 25;
+$age = 66;
 $is_member = true;
 $is_student = false;
 
