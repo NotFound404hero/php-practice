@@ -13,8 +13,7 @@ foreach ($students as $student) {
 }
 //if-elseif-else文
 if ($score >= 90) {
-    $grade = "A";
-    $status = "優秀";
+    return ["grade" => "A", "status" => "優秀"];
 } elseif ($score >= 80) {
     $grade = "B";
     $status = "良好";
