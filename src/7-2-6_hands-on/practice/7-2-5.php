@@ -20,8 +20,14 @@ $user['email'] = 'yamada@example.com';
 
 print_r($user);
 
-unset($fruits[1]);
+unset($fruits[3]);
 print_r($fruits);
 $fruits = array_values($fruits);
 
 print_r($fruits);
+
+$user = ['name' => '山田', 'age' => 30];
+print_r($user);
+
+$user = ['name' => '山田', 'age' => 30];
+var_dump($user);
