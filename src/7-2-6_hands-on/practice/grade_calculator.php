@@ -13,32 +13,26 @@ $students = [
 //配列のループ
 foreach ($students as $student) {
     $score = $student["score"];
-
     if ($score >= 90) {
         $grade = "A";
         $status = "優秀";
     } elseif ($score >= 80) {
         $grade = "B";
         $status = "良好";
-
     } else {
         $grade = 'F';
         $status = '不合格';
     }
-
     echo $student["name"] . " " . $score . "点・" . $status . "<br>";
-
 }
 
 echo "【統計情報】<br>";
 /* 合格者数4人
-    不合格者数1人
-    平均点75.6点　*/
+    不合格者数1人*/
 
 //カウンター変数
 $pass_count = 0;
 $fail_count = 0;
-
 foreach ($students as $student) {
     if ($student["score"] >= 80) {
         $pass_count++; // 合格者数を増やす
@@ -51,8 +45,8 @@ echo "合格者数" . $pass_count . "人" . "<br>";
 echo "不合格者数" . $fail_count . "人" . "<br>";
 
 
-//平均点の計算
-
+/*平均点の計算
+    平均点75.6点　*/
 $total_score = 0;
 foreach ($students as $student) {
     if (isset($student['score'])) {
