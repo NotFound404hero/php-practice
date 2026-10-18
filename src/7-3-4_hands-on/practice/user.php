@@ -32,6 +32,7 @@ $user3 = new User("鈴木 一郎", 30);
 echo $user1->introduce();
 echo $user2->introduce();
 echo $user3->introduce();
+
 ?>
 
 <h2>成人判定</h2>
